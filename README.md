@@ -83,9 +83,11 @@ untuk soal c, public IP, adalah ip diluar
 - 192.168.0.0 — 192.168.255.255
 
 ### Question 6
+
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
 ### Answer 6
+
 Pertama, kita perhatikan angka yang ada pada kalimat yang diapit tanda petik. Berdasarkan hint, itu adalah paket yang dimaksudkan, yaitu no 7812. Selanjutnya, kita cek di Wireshark menggunakan fitur Go to Packet dengan searching ke no paket tersebut
 
 ![no6](img/No6.png)
@@ -107,8 +109,11 @@ Ternyata "jdrnja" adalah kode yang dimaksud, namun testcase yang diminta harus d
 
 
 ### Question 7
+
 Berapa jumlah packet yang menuju IP 184.87.193.88?
+
 ### Answer 7
+
 Untuk mengidentifikasi paket yang mengarah ke alamat IP 184.87.193.88, kita menerapkan suatu filter dengan ekspresi "ip.dst == 184.87.193.88". Filter ini berfungsi untuk menyaring dan menampilkan hanya paket-paket yang memiliki tujuan alamat IP 184.87.193.88. Setelah menerapkan filter ini, kita menghitung jumlah total paket yang terlihat.
 
 ![No7](img/No7.png)
@@ -116,15 +121,21 @@ Untuk mengidentifikasi paket yang mengarah ke alamat IP 184.87.193.88, kita mene
 Ternyata ada 6 paket yang sesuai dengan kriteria ini. Dengan kata lain, kita berhasil mengidentifikasi dan menampilkan 6 paket yang menuju ke alamat IP 184.87.193.88.
 
 ### Question 8
+
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
 ### Answer 8
+
 Filter yang digunakan untuk mengambil semua paket dengan protokol yang ditujukan ke port 80 adalah "tcp.dstport == 80 || udp.dstport == 80". Filter ini memiliki dua bagian: pertama,  akan menangkap paket-paket yang ditujukan ke port 80 menggunakan protokol TCP, dan kedua juga akan menangkap paket-paket yang ditujukan ke port 80 menggunakan protokol UDP. Jadi, dengan filter ini, kita akan mengidentifikasi semua yang terhubung ke port 80, baik melalui TCP maupun UDP.
 
 ![No8](img/No8.png)
 
 ### Question 9
+
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+
 ### Answer 9
+
 -Filter yang digunakan untuk mengambil paket yang memiliki sumber alamat IP 10.51.40.1 tetapi tidak memiliki tujuan alamat IP 10.39.55.34 adalah "ip.src == 10.51.40.1 && ip.dst != 10.39.55.34". 
 
 -Dengan filter ini, kita mengidentifikasi paket-paket yang memenuhi dua kondisi: pertama, paket tersebut harus berasal dari alamat IP 10.51.40.1 (ip.src == 10.51.40.1), dan kedua, paket tersebut tidak boleh ditujukan ke alamat IP 10.39.55.34 (ip.dst != 10.39.55.34).
@@ -132,8 +143,11 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 ![no9](img/No9.png)
 
 ### Question 10
+
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
+
 ### Answer 10
+
 -Langkah pertama yang perlu dilakukan adalah menyaring paket dengan menggunakan query atau filter untuk protokol Telnet. Setelah itu, gulirkan tampilan ke bawah hingga mencapai frame paling bawah karena diasumsikan bahwa pengguna sudah terhubung pada bagian akhir percakapan.
 
 -Setelah sampai pada frame terakhir, selanjutnya tekan opsi yang memungkinkan Anda untuk mengikuti aliran (follow stream) dari protokol TCP yang digunakan dalam koneksi Telnet ini.
