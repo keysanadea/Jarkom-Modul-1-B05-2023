@@ -8,13 +8,17 @@ Group Members:
 |5025221202|Hilmy Septian Nursyekha|
    
 ### Question 1 
+
 User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
 ### Answer 1
+
 #### 1a dan 1b
+
 Untuk memulai mengerjakan, langkah pertama adalah menyalin perintah "nc 10.21.78.111 12345" ke terminal, yang akan menghasilkan tampilan pertanyaan atau tugas yang harus dijawab. Selanjutnya, dalam langkah kedua, Amengunduh file bernama "soal1.pcapng" dan membukanya menggunakan Wireshark. Pada langkah ketiga, akan dilakukan pencarian khusus di Wireshark dengan menggunakan perintah "ftp.request.command == "STOR". FTP, atau "File Transfer Protocol," adalah protokol yang digunakan untuk mengirim file antara dua komputer melalui jaringan, seperti internet, dan "STOR" adalah perintah dalam FTP yang digunakan untuk mengirimkan file dari klien ke server. Hasil pencarian ini akan mengidentifikasi permintaan yang dimaksud dalam paket data nomor 147. Dengan demikian, tiga langkah ini membentuk proses yang harus diikuti untuk menyelesaikan tugas atau pertanyaan yang diberikan.
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/da946a8d-b568-4d54-83a9-902d3bcec7d1)
@@ -25,6 +29,7 @@ no. 147
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/7897566c-240b-4445-a238-b88dbbc89acf)
 
 #### 1c dan 1d
+
 pada c dan d juga memiliki konsep sama hanya saja yang dicari adalah packet yang menunjukan response dari aktivitas tersebut berarti yang merupakan response dari aktivitas STOR di 149.
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/7217514e-a7c9-4f94-90eb-c195acf4e11f)
@@ -39,26 +44,42 @@ no. 149
 - 1c --> 1044861039
 - 1d --> 258040696
 
+![no1](img/No1.png)
+
 Informasi ini memberikan data yang dibutuhkan atau hasil yang dicari setelah menjalankan langkah-langkah tersebut.
+
 ### Question 2 
+
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+
 ### Answer 2
+
 Langkah pertama adalah membuka file capture di Wireshark. Setelah itu, kita menggunakan filter berikut ini di bagian atas layar atau panel "Display Filter" untuk menyaring paket-paket sesuai perintah soal yang ingin dicari: frame contains “Jarkom” setelah itu jika di follow TCP Streamnya akan menunjukkan web server yang digunakan.
+
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/25155852-929b-47e1-9cca-01f7a4ab351c)
+
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/cfd5ae61-989c-4989-9b80-6a99f103ba33)
 
+![no2](img/No2.png)
+
 ### Question 3
+
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 b. Protokol layer transport apa yang digunakan?
+
 ### Answer 3
+
 #### 3a
+
 Langkah pertama adalah membuka file capture di Wireshark. Setelah itu, kita menggunakan filter berikut ini di bagian atas layar atau panel "Display Filter" untuk menyaring paket-paket sesuai perintah soal yang ingin dicari: (ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702). Filter ini akan menampilkan daftar paket yang memiliki alamat IP sumber atau tujuan 239.255.255.250 dan port 3702.
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/9d0b7a58-1ecc-4fcb-a8db-be6d27f71009)
 
 #### 3b
 Pada screenshot diatas juga dapat dilihat bahwa sudah tertera jelas untuk protocol yang digunakan adalah UDP
+
+![no3](img/No3.png)
 
 ### Question 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -68,6 +89,8 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 - setelah itu akan terdapat checksum yaitu 0x18e5
 - masukkan ncat 10.21.78.111 13591 terminal
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/74d80a8b-3053-429b-bdd0-26f88e73ddbd)
+
+![no4](img/No4.png)
 
 ### Question 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -95,6 +118,8 @@ untuk soal c, public IP, adalah ip diluar
 - 10.0.0.0 — 10.255.255.255
 - 172.16.0.0 — 172.31.255.255
 - 192.168.0.0 — 192.168.255.255
+
+![No5](img/No5.png)
 
 ### Question 6
 
