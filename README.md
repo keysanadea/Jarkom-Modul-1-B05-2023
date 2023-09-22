@@ -44,41 +44,41 @@ no. 149
 - 1c --> 1044861039
 - 1d --> 258040696
 
+HASIL:
 ![no1](img/No1.png)
-
-Informasi ini memberikan data yang dibutuhkan atau hasil yang dicari setelah menjalankan langkah-langkah tersebut.
-
 ### Question 2 
-
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
-
 ### Answer 2
 
-Langkah pertama adalah membuka file capture di Wireshark. Setelah itu, kita menggunakan filter berikut ini di bagian atas layar atau panel "Display Filter" untuk menyaring paket-paket sesuai perintah soal yang ingin dicari: frame contains “Jarkom” setelah itu jika di follow TCP Streamnya akan menunjukkan web server yang digunakan.
-
+Langkah pertama adalah menyalin perintah "nc 10.21.78.111 13579" ke terminal, yang akan menghasilkan tampilan pertanyaan atau tugas yang harus dijawab. Selanjutnya, dalam langkah kedua, mengunduh file bernama "soal2.pcapng" dan membukanya menggunakan Wireshark. Langkah ketiga melibatkan penggunaan filter untuk protokol HTTP dalam Wireshark, karena portal web yang akan dianalisis berada di alamat http://10.21.78.111:8000/. Dengan demikian, tiga langkah ini membentuk proses yang harus diikuti.
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/25155852-929b-47e1-9cca-01f7a4ab351c)
+Langkah ketiga melibatkan langkah-langkah berikut:
+Setelah membuka file "soal2.pcapng" di Wireshark dan menerapkan filter HTTP seperti yang telah disebutkan sebelumnya, Anda dapat melanjutkan dengan melakukan tindakan berikut:
+- Klik kanan pada salah satu paket yang terkait dengan protokol HTTP yang ingin Anda analisis.
+- Pilih opsi "Follow" dari menu yang muncul.
+- Dalam submenu "Follow," pilih "HTTP Stream."
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/cfd5ae61-989c-4989-9b80-6a99f103ba33)
-
+HASIL:
 ![no2](img/No2.png)
 
 ### Question 3
-
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 b. Protokol layer transport apa yang digunakan?
-
 ### Answer 3
-
 #### 3a
-
-Langkah pertama adalah membuka file capture di Wireshark. Setelah itu, kita menggunakan filter berikut ini di bagian atas layar atau panel "Display Filter" untuk menyaring paket-paket sesuai perintah soal yang ingin dicari: (ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702). Filter ini akan menampilkan daftar paket yang memiliki alamat IP sumber atau tujuan 239.255.255.250 dan port 3702.
+Langkah pertama adalah menyalin perintah "nc 10.21.78.111 13590" ke terminal, yang akan menyebabkan munculnya pertanyaan atau tugas yang harus dijawab. Langkah kedua melibatkan pengunduhan file bernama "soal3.pcap" dan membuka file tersebut di Wireshark. Kemudian perlu menerapkan filter dengan menggunakan perintah "ip.addr == 239.255.255.250 && udp.port == 3702" untuk menyaring paket-paket yang relevan dengan alamat IP 239.255.255.250 dan port UDP 3702. 
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/9d0b7a58-1ecc-4fcb-a8db-be6d27f71009)
+Setelah itu, bisa dilihat di bawah kanan memeriksa jumlah paket yang berhasil ditangkap, yang dalam hal ini adalah sebanyak 21 paket. 
+![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/72b799e5-9f1d-44eb-bf5a-789d91050c08)
 
 #### 3b
-Pada screenshot diatas juga dapat dilihat bahwa sudah tertera jelas untuk protocol yang digunakan adalah UDP
+Langkah keempat adalah setelah memverifikasi bahwa terdapat 21 paket yang berhasil ditangkap dapat memasukkan jawaban ke dalam terminal. Jika jawaban tersebut benar, maka akan muncul pertanyaan kedua, yaitu mengenai protokol layer yang digunakan. Jawaban untuk pertanyaan tersebut telah ditemukan dalam tangkapan layar sebelumnya, yakni menggunakan protokol UDP. 
+![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/62d3f6b6-7eb3-413e-bcb9-50a4ffb1e0c1)
 
+HASIL :
 ![no3](img/No3.png)
 
 ### Question 4
