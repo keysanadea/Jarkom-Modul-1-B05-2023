@@ -85,8 +85,16 @@ untuk soal c, public IP, adalah ip diluar
 ### Question 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
-
-
+### Answer 6
+Pertama, kita perhatikan angka yang ada pada kalimat yang diapit tanda petik. Berdasarkan hint, itu adalah paket yang dimaksudkan, yaitu no 7812. Selanjutnya, kita cek di Wireshark menggunakan fitur Go to Packet dengan searching ke no paket tersebut
+![no6](img/No6.png) 
+dari gambar tersebut, kita bisa mengambil source adress 104.18.14.101 sebagai clue selanjutnya sebagaimana yang disebutkan pada hint. Lalu kita menuju A1Z26 cipher untuk melakukan decode pada source adress tersebut dan diperoleh :
+[no6(1)](img/No6(1).png)
+Dari dcode tersebut diperoleh "1drn1a" dan sudah memnuhi syarat jumlah karakter, namun masih mengandung karakter angka yang mana pada hint disebutkan "Rentang Huruf yang digunakan Huruf A-R, 1-18 dengan Jawaban 6 Huruf". Lalu kita coba pisahkan source kode tersebut yang memiliki tiga elemen menjadi dua elemen dan satu elemen karena alphabet maksimal memiliki dua digit pada urutan dalam angka, sehingga menjadi "10 4 18 10 1". Setelah itu, kita decode kembali dan hasilnya sebagai berikut : 
+![no6(2)](img/No6(2).png)
+Diperoleh kode "jdrnja". Lalu kita masukkan ke terminal, sebagai berikut
+![no6(3)](img/No6(3).png)
+Ternyata "jdrnja" adalah kode yang dimaksud, namun testcase yang diminta harus dalam bentuk kapital semua.
 
 
 
