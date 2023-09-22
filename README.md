@@ -2,8 +2,10 @@
 
 ### Praktikum Jarkom Modul 1
 Group Members:
-1. Keysa Anadea (5025211028)
-2. Hilmy Septian Nursyekha (5025221202)
+| NRP | Name |
+| ------ | ------ |
+|5025211028|Keysa Anadea Aqiva Ajie|
+|5025221202|Hilmy Septian Nursyekha|
    
 ### Question 1 
 User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
