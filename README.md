@@ -120,6 +120,8 @@ Untuk mengidentifikasi paket yang mengarah ke alamat IP 184.87.193.88, kita mene
 
 ![No7](img/No7.png)
 
+![No7(1)](img/No7(1).png)
+
 Ternyata ada 6 paket yang sesuai dengan kriteria ini. Dengan kata lain, kita berhasil mengidentifikasi dan menampilkan 6 paket yang menuju ke alamat IP 184.87.193.88.
 
 ### Question 8
@@ -131,6 +133,8 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 Filter yang digunakan untuk mengambil semua paket dengan protokol yang ditujukan ke port 80 adalah "tcp.dstport == 80 || udp.dstport == 80". Filter ini memiliki dua bagian: pertama,  akan menangkap paket-paket yang ditujukan ke port 80 menggunakan protokol TCP, dan kedua juga akan menangkap paket-paket yang ditujukan ke port 80 menggunakan protokol UDP. Jadi, dengan filter ini, kita akan mengidentifikasi semua yang terhubung ke port 80, baik melalui TCP maupun UDP.
 
 ![No8](img/No8.png)
+
+![No8(1)](img/No8(1).png)
 
 ### Question 9
 
@@ -144,6 +148,8 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 
 ![no9](img/No9.png)
 
+![No9(1)](img/No9(1).png)
+
 ### Question 10
 
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
@@ -156,7 +162,10 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
 
 -Hasilnya akan dapat melihat bahwa informasi kredensial yang benar untuk masuk adalah sebagai berikut:
 
+![no10](img/No10.png)
+
 Nama Pengguna (Username): dhafin
 Kata Sandi (Password): kesayangannyak0k0
 
-![no10](img/No10.png)
+![No10(1)](img/No10(1).png)
+
