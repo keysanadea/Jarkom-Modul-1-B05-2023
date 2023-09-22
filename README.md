@@ -92,7 +92,7 @@ Pertama, kita perhatikan angka yang ada pada kalimat yang diapit tanda petik. Be
 
 Dari gambar tersebut, kita bisa mengambil source adress 104.18.14.101 sebagai clue selanjutnya sebagaimana yang disebutkan pada hint. Lalu kita menuju A1Z26 cipher untuk melakukan decode pada source adress tersebut dan diperoleh :
 
-[no6(1)](img/No6(1).png)
+![no6(1)](img/No6(1).png)
 
 Dari dcode tersebut diperoleh "1drn1a" dan sudah memnuhi syarat jumlah karakter, namun masih mengandung karakter angka yang mana pada hint disebutkan "Rentang Huruf yang digunakan Huruf A-R, 1-18 dengan Jawaban 6 Huruf". Lalu kita coba pisahkan source kode tersebut yang memiliki tiga elemen menjadi dua elemen dan satu elemen karena alphabet maksimal memiliki dua digit pada urutan dalam angka, sehingga menjadi "10 4 18 10 1". Setelah itu, kita decode kembali dan hasilnya sebagai berikut : 
 
