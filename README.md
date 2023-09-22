@@ -129,6 +129,7 @@ Filter yang digunakan untuk mengambil paket yang memiliki sumber alamat IP 10.51
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
 ### Answer 10
 -Langkah pertama yang perlu dilakukan adalah menyaring paket dengan menggunakan query atau filter untuk protokol Telnet. Setelah itu, gulirkan tampilan ke bawah hingga mencapai frame paling bawah karena diasumsikan bahwa pengguna sudah terhubung pada bagian akhir percakapan.
+
 -Setelah sampai pada frame terakhir, selanjutnya tekan opsi yang memungkinkan Anda untuk mengikuti aliran (follow stream) dari protokol TCP yang digunakan dalam koneksi Telnet ini.
 
 -Hasilnya akan dapat melihat bahwa informasi kredensial yang benar untuk masuk adalah sebagai berikut:
