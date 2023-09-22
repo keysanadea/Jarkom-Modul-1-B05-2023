@@ -94,7 +94,7 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 ### Answer 7
 Untuk mengidentifikasi paket yang mengarah ke alamat IP 184.87.193.88, kita menerapkan suatu filter dengan ekspresi "ip.dst == 184.87.193.88". Filter ini berfungsi untuk menyaring dan menampilkan hanya paket-paket yang memiliki tujuan alamat IP 184.87.193.88. Setelah menerapkan filter ini, kita menghitung jumlah total paket yang terlihat.
-
+![No7](img/No7.png)
 
 ### Question 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
