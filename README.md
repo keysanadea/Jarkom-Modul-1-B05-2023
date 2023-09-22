@@ -117,6 +117,9 @@ untuk soal c, public IP, adalah ip diluar dibawah ini, sehingga dibawah ini meru
 - 172.16.0.0 — 172.31.255.255
 - 192.168.0.0 — 192.168.255.255
 
+Sehingga ip publik adalah 74.53.140.153:
+![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/9ffceecd-1383-4edb-a5bf-5344fee83631)
+
 HASIL:
 ![No5](img/No5.png)
 
