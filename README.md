@@ -15,19 +15,31 @@ c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari ak
 d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ### Answer 1
 #### 1a dan 1b
-Untuk mengerjakan soal no 1 a dan b, hal yang pertama dilakukan adalah menggunakan filter FTP. setelah itu dalam soal diberikan instruksi bahwa salah satunya adalah menggunggah suatu file.
+Untuk memulai mengerjakan, langkah pertama adalah menyalin perintah "nc 10.21.78.111 12345" ke terminal, yang akan menghasilkan tampilan pertanyaan atau tugas yang harus dijawab. Selanjutnya, dalam langkah kedua, Amengunduh file bernama "soal1.pcapng" dan membukanya menggunakan Wireshark. Pada langkah ketiga, akan dilakukan pencarian khusus di Wireshark dengan menggunakan perintah "ftp.request.command == "STOR". FTP, atau "File Transfer Protocol," adalah protokol yang digunakan untuk mengirim file antara dua komputer melalui jaringan, seperti internet, dan "STOR" adalah perintah dalam FTP yang digunakan untuk mengirimkan file dari klien ke server. Hasil pencarian ini akan mengidentifikasi permintaan yang dimaksud dalam paket data nomor 147. Dengan demikian, tiga langkah ini membentuk proses yang harus diikuti untuk menyelesaikan tugas atau pertanyaan yang diberikan.
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/da946a8d-b568-4d54-83a9-902d3bcec7d1)
+Langkah keempat melibatkan pemilihan pada protokol kontrol transmisi (Transmission Control Protocol), yang selanjutnya akan menampilkan informasi mengenai nomor urutan (sequence number) dalam format "raw" dan nomor pengetahuan (acknowledge number) dalam format "raw" di layar.
 
-setelah itu kita akan mencari info yang requestnya menggunggah file atau STOR. yang terdapat pada no 147 setelah itu kita double tap dua kali serta drop down di transmission control dan protocol dan dapat sequence number raw dan acknowledge number raw.
-
+Hasil dari langkah-langkah tersebut adalah sebagai berikut:
+no. 147
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/7897566c-240b-4445-a238-b88dbbc89acf)
 
 #### 1c dan 1d
-pada c dan d juga memiliki konsep sama hanya saja yang dicari adalah packet yang menunjukan response dari aktivitas tersebut berarti kita ambil packet no setelah 147 yang merupakan response dari aktivitas STOR di n 147.
+pada c dan d juga memiliki konsep sama hanya saja yang dicari adalah packet yang menunjukan response dari aktivitas tersebut berarti yang merupakan response dari aktivitas STOR di 149.
 
+![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/7217514e-a7c9-4f94-90eb-c195acf4e11f)
+Langkah keempat melibatkan pemilihan pada protokol kontrol transmisi (Transmission Control Protocol), yang selanjutnya akan menampilkan informasi mengenai nomor urutan (sequence number) dalam format "raw" dan nomor pengetahuan (acknowledge number) dalam format "raw" di layar.
+
+Hasil dari langkah-langkah tersebut adalah sebagai berikut:
+no. 149
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/c421d110-d3e1-4485-ab3a-2f9ab640a89d)
 
+- 1a --> 258040667
+- 1b --> 1044861039
+- 1c --> 1044861039
+- 1d --> 258040696
+
+Informasi ini memberikan data yang dibutuhkan atau hasil yang dicari setelah menjalankan langkah-langkah tersebut.
 ### Question 2 
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 ### Answer 2
