@@ -122,8 +122,9 @@ Filter yang digunakan untuk mengambil semua paket dengan protokol yang ditujukan
 ### Question 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 ### Answer 9
-Filter yang digunakan untuk mengambil paket yang memiliki sumber alamat IP 10.51.40.1 tetapi tidak memiliki tujuan alamat IP 10.39.55.34 adalah "ip.src == 10.51.40.1 && ip.dst != 10.39.55.34". 
-Dengan filter ini, kita mengidentifikasi paket-paket yang memenuhi dua kondisi: pertama, paket tersebut harus berasal dari alamat IP 10.51.40.1 (ip.src == 10.51.40.1), dan kedua, paket tersebut tidak boleh ditujukan ke alamat IP 10.39.55.34 (ip.dst != 10.39.55.34).
+-Filter yang digunakan untuk mengambil paket yang memiliki sumber alamat IP 10.51.40.1 tetapi tidak memiliki tujuan alamat IP 10.39.55.34 adalah "ip.src == 10.51.40.1 && ip.dst != 10.39.55.34". 
+
+-Dengan filter ini, kita mengidentifikasi paket-paket yang memenuhi dua kondisi: pertama, paket tersebut harus berasal dari alamat IP 10.51.40.1 (ip.src == 10.51.40.1), dan kedua, paket tersebut tidak boleh ditujukan ke alamat IP 10.39.55.34 (ip.dst != 10.39.55.34).
 
 ![no9](img/No9.png)
 
@@ -138,4 +139,5 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
 
 Nama Pengguna (Username): dhafin
 Kata Sandi (Password): kesayangannyak0k0
+
 ![no10](img/No10.png)
