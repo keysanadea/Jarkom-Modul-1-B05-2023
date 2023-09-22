@@ -84,12 +84,10 @@ HASIL :
 ### Question 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 ### Answer 4
-- membuka file soal di wireshark
-- klik kanan pada bagian protocol dari paket no.130
-- setelah itu akan terdapat checksum yaitu 0x18e5
-- masukkan ncat 10.21.78.111 13591 terminal
+Langkah pertama adalah menyalin perintah "nc 10.21.78.111 13591" ke terminal, yang akan menghasilkan tampilan pertanyaan atau tugas yang harus dijawab. Selanjutnya perlu mengunduh file "soal4.pcapng" dan membukanya di Wireshark. Kemudian, dalam langkah kedua perlu mencari paket dengan nomor 130 dan menemukan nilai checksum pada bagian User Datagram Protocol (UDP). Langkah terakhir adalah memasukkan nilai checksum yang Anda temukan, yaitu 0x18e5, untuk mendapatkan flag dari soal tersebut.
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/74d80a8b-3053-429b-bdd0-26f88e73ddbd)
 
+HASIL :
 ![no4](img/No4.png)
 
 ### Question 5
@@ -114,11 +112,12 @@ untuk soal b, port yang digunakan untuk service SMTP
 
 ![image](https://github.com/keysanadea/Jarkom-Modul-1-B05-2023/assets/88714452/0a31cb33-0468-4c0f-8d23-25ec67fbc6ad)
 
-untuk soal c, public IP, adalah ip diluar
+untuk soal c, public IP, adalah ip diluar dibawah ini, sehingga dibawah ini merupakan ip private:
 - 10.0.0.0 — 10.255.255.255
 - 172.16.0.0 — 172.31.255.255
 - 192.168.0.0 — 192.168.255.255
 
+HASIL:
 ![No5](img/No5.png)
 
 ### Question 6
