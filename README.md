@@ -208,3 +208,7 @@ Kata Sandi (Password): kesayangannyak0k0
 
 ![No10(1)](img/No10(1).png)
 
+## Kendala Saat Pengerjaan
+- Susah untuk connect dengan VPN ITS sehingga waktu yang digunakan untuk praktikum lebih sedikit.
+- Lambatnya koneksi praktikum sehingga sering kali gagal saat ingin memasukkan jawaban kedalam nc (tidak muncul pertanyaan atau respon dari terminal).
+- Salah satu anggota kelompok (Keysa Anadea) tidak bisa meng-submit di website sama sekali karena permasalahan VPN saat pengerjaan dimulai, sehingga harus perantara oleh anggota yang lain.
